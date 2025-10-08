@@ -67,6 +67,6 @@ Dự án này được thực hiện nhằm **tự động hóa toàn bộ quy t
 ---
 
 ## ✉️ Tác giả
-**Tram Dang Tai**
-
+**Tram Dang Tai**  
+📍 Business Data Analyst  
 📧 [Liên hệ qua LinkedIn](https://www.linkedin.com/in/tramdangtai)
