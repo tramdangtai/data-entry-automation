@@ -71,4 +71,6 @@ The goal of this project was to automate and standardize the entire data entry p
 
 ---
 
-## 📁 Repository Structure  
+## 📸 Preview  
+![Folder List.PNG]
+
