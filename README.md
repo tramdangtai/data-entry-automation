@@ -57,12 +57,14 @@ Dự án này được thực hiện nhằm **tự động hóa toàn bộ quy t
 ## 📸 Kết quả
 ### Folder
 <p align="center">
-  <img src="./Folder%20List.PNG" alt="Preview cấu trúc thư mục và template" width="650">
+  <img src="./Folder%20List.PNG" alt="Preview thư mục kết quả" width="650">
 </p>
+
 ### Template
 <p align="center">
-  <img src="./Template.PNG" alt="Preview cấu trúc thư mục và template" width="650">
+  <img src="./Template.PNG" alt="Preview template" width="650">
 </p>
+
 ---
 
 ## ✉️ Tác giả
