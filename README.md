@@ -57,16 +57,17 @@ Dự án này được thực hiện nhằm **tự động hóa toàn bộ quy t
 ## 📸 Kết quả
 ### Folder
 <p align="center">
-  <img src="./Folder%20List.PNG" alt="Preview thư mục kết quả" width="650">
+  <img src="./Image/Folder_List.PNG" alt="Preview thư mục kết quả" width="650">
 </p>
 
 ### Template
 <p align="center">
-  <img src="./Template.PNG" alt="Preview template" width="650">
+  <img src="./Image/Template_File.PNG" alt="Preview template" width="650">
 </p>
 
 ---
 
 ## ✉️ Tác giả
 **Tram Dang Tai**
+
 📧 [Liên hệ qua LinkedIn](https://www.linkedin.com/in/tramdangtai)
