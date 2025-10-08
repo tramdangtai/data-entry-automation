@@ -71,7 +71,13 @@ The goal of this project was to automate and standardize the entire data entry p
 
 ---
 
-## 📸 Preview  
+## 📸 Preview
+### Template
+<p align="center">
+  <img src="./Template.PNG" alt="Template Preview" width="650">
+</p>
+
+### Folder Result
 <p align="center">
   <img src="./Folder%20List.PNG" alt="Folder Structure Preview" width="650">
 </p>
