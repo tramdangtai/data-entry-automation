@@ -3,82 +3,68 @@
 
 ---
 
-## 🧩 Project Overview  
-This project was developed to address inefficiencies and frequent errors in the manual data entry process for item code creation within the company’s internal system.  
+## 📘 Giới thiệu
+Trong quá trình tạo mã sản phẩm mới, nhóm cần điền nhiều thông tin vào các file mẫu (template) để gửi yêu cầu cho bộ phận IT.  
+Tuy nhiên, việc này thường mất nhiều thời gian và dễ xảy ra sai sót do thông tin rời rạc, không được kiểm soát tập trung.  
 
-Previously, each team member had to manually fill in multiple Excel templates and send them to the IT department for code generation. This process often resulted in missing or inconsistent information, taking over **20 minutes per case** and causing operational delays.  
-
-The goal of this project was to automate and standardize the entire data entry process, ensuring **100% data accuracy** while significantly reducing time spent on repetitive manual tasks.
-
----
-
-## 💡 Business Problem  
-- Input data for new item codes was scattered across multiple files, leading to incomplete or inconsistent submissions.  
-- Manual filling of Excel templates was time-consuming and error-prone.  
-- Each member used different file paths and templates, making standardization difficult.  
+Dự án này được thực hiện nhằm **tự động hóa toàn bộ quy trình nhập liệu**, giúp đảm bảo **tính chính xác, đầy đủ và giảm thiểu thời gian thao tác thủ công** cho người dùng.
 
 ---
 
-## 🎯 Objectives  
-1. Centralize and structure all required information for item creation in a single master file.  
-2. Automate the population of multiple Excel templates with pre-validated data.  
-3. Minimize data entry time and eliminate human errors.  
-4. Provide an easy-to-deploy solution usable by all team members without technical expertise.  
+## 🎯 Mục tiêu dự án
+- Tập trung và kiểm soát tất cả thông tin cần điền trong một file Excel duy nhất.  
+- Tự động điền dữ liệu vào các file template nhờ macro VBA.  
+- Tăng tốc độ xử lý và giảm thiểu lỗi khi gửi yêu cầu tạo mã sản phẩm.  
+- Tạo quy trình có thể tái sử dụng, dễ chuyển giao cho các thành viên khác trong nhóm.
 
 ---
 
-## ⚙️ Solution Overview  
+## 🧩 Giải pháp thực hiện
+1. **Xây dựng file Excel trung tâm:**  
+   - Gồm nhiều sheet tương ứng với từng loại yêu cầu hoặc trường hợp tạo mã.  
+   - Các ô dữ liệu được định danh và cấu trúc rõ ràng để dễ dàng kiểm soát.
+   - Một vài ô được dùng để lưu đường dẫn đến các file template và thư mục xuất kết quả, nhằm đảm bảo khả năng linh hoạt giữa các máy tính.
 
-### Step 1 — Centralized Data Collection  
-- Created a **master Excel file** containing structured sheets for different item creation scenarios.  
-- Added configurable input cells to store template file paths (so each user can adjust their local environment easily).  
+2. **Tự động hóa bằng VBA:**  
+   - Viết macro để tự động mở file template, điền dữ liệu vào đúng vị trí, lưu lại và đóng file.  
+   - Tạo folder mới tự động theo ngày giờ thực thi để lưu các file đã hoàn tất.  
+   - Sử dụng cơ chế kiểm soát lỗi (`On Error GoTo`) để đảm bảo tính ổn định khi chạy macro.  
+   - Hiển thị thông báo hoàn tất quy trình cho người dùng sau khi xử lý xong.
 
-### Step 2 — Automation with VBA  
-- Built a **VBA-based automation script** that:  
-  - Opens relevant templates automatically.  
-  - Populates all required fields with validated master data.  
-  - Creates a **timestamped folder** (date + time) to store the completed templates for record-keeping.  
-  - Handles errors gracefully (using `On Error GoTo`) to ensure smooth execution and user confidence.  
-
-### Step 3 — Deployment & Team Adoption  
-- Delivered the macro-enabled Excel file (`.xlsm`) to all team members.  
-- Conducted testing and setup guidance to enable VBA macros.  
-- Trained users to operate the system with minimal effort (no coding knowledge required).  
-
----
-
-## 📈 Results & Impact  
-- ⏱ Reduced data entry time from **20+ minutes to under 2 minutes per case.**  
-- ✅ Achieved **100% accuracy** in all submitted templates.  
-- 👥 Deployed to the entire team (8 users), saving an estimated **80+ work hours per month.**  
-- 🧠 Improved overall data governance and process consistency for IT code creation requests.  
+3. **Phân phối và hướng dẫn sử dụng:**  
+   - Chia sẻ file macro cho các thành viên trong nhóm.  
+   - Hướng dẫn cài đặt và kích hoạt macro trên máy cá nhân.  
+   - Chạy thử nghiệm (test run) để đảm bảo tính tương thích và ổn định.
 
 ---
 
-## 🧠 Key Insights  
-- Even widely-used tools like Excel can become **powerful automation platforms** when paired with simple VBA logic.  
-- Automating repetitive business processes not only saves time but also **builds data reliability and confidence** across departments.  
-- Process automation should always be paired with **user training** and clear documentation to ensure adoption and sustainability.  
+## 📊 Kết quả đạt được
+- **Giảm thời gian nhập liệu** từ hơn **20 phút xuống dưới 2 phút** cho mỗi yêu cầu.  
+- **Đảm bảo 100% tính chính xác và đầy đủ** của thông tin được điền.  
+- **Tăng năng suất công việc**, giảm sai sót và đơn giản hóa quy trình kiểm tra thông tin.  
+- **Cải thiện khả năng phối hợp nhóm** nhờ quy trình chuẩn hóa, có thể áp dụng cho nhiều thành viên khác nhau.
 
 ---
 
-## 🧰 Skills & Tools Used  
-- **Microsoft Excel** — data structuring and user interface design  
-- **VBA / Macros** — automation of repetitive workflows  
-- **Process Optimization** — streamlining manual business tasks  
-- **Data Quality Control** — validation and accuracy checks  
-- **Documentation & User Training** — enabling non-technical adoption  
+## 🛠️ Công cụ & Kỹ thuật sử dụng
+- **Microsoft Excel** (với Macro & VBA)  
+- **File System Automation** (tạo và lưu file tự động)  
+- **Error Handling & Message Notification**  
+- **Data Validation & Standardization**
 
 ---
 
-## 📸 Preview
+## 📸 Kết quả
+### Folder
+<p align="center">
+  <img src="./Folder%20List.PNG" alt="Preview cấu trúc thư mục và template" width="650">
+</p>
 ### Template
 <p align="center">
-  <img src="./Template.PNG" alt="Template Preview" width="650">
+  <img src="./Template.PNG" alt="Preview cấu trúc thư mục và template" width="650">
 </p>
+---
 
-### Folder Result
-<p align="center">
-  <img src="./Folder%20List.PNG" alt="Folder Structure Preview" width="650">
-</p>
-
+## ✉️ Tác giả
+**Tram Dang Tai**
+📧 [Liên hệ qua LinkedIn](https://www.linkedin.com/in/tramdangtai)
