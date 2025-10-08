@@ -1,5 +1,4 @@
 # ⚙️ Automating Data Input Workflow to Improve Accuracy & Efficiency  
-**Tools:** Microsoft Excel | VBA (Macro) | Process Automation | Data Quality Control  
 
 ---
 
